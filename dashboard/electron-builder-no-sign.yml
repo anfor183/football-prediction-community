@@ -1,0 +1,36 @@
+appId: com.nexus.panel
+productName: Nexus Dashboard
+directories:
+  output: dist
+files:
+  - out/**/*
+  - resources/**/*
+  - package.json
+win:
+  target: nsis
+  sign: false
+  signAndEditExecutable: false
+  icon: resources/icon.ico
+nsis:
+  oneClick: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+
+extraResources:
+  - from: "../"
+    to: "app-scripts"
+    filter:
+      - "*.js"
+      - "utils/**/*"
+      - "personalities.json"
+      - "keywords*.txt"
+      - "proxies.json"
+      - "bot_settings.json"
+      - "browser-config.json"
+      - "!node_modules"
+      - "!dashboard"
+      - "!.git"
+  - from: "../../node_modules"
+    to: "node_modules"
+  - from: "../node_modules"
+    to: "node_modules"

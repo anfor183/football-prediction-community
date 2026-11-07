@@ -1,0 +1,60 @@
+{
+  "trained_on": 19950,
+  "n_classes": 9,
+  "htft_labels": [
+    "htft11",
+    "htft1X",
+    "htft12",
+    "htftX1",
+    "htftXX",
+    "htftX2",
+    "htft21",
+    "htft2X",
+    "htft22"
+  ],
+  "walk_forward_folds": [
+    {
+      "fold": 1,
+      "train_n": 5985,
+      "test_n": 2793,
+      "top1_accuracy": 19.69,
+      "log_loss": 2.0253,
+      "simulated_roi": 37.63
+    },
+    {
+      "fold": 2,
+      "train_n": 8778,
+      "test_n": 2793,
+      "top1_accuracy": 19.58,
+      "log_loss": 2.043,
+      "simulated_roi": 30.53
+    },
+    {
+      "fold": 3,
+      "train_n": 11571,
+      "test_n": 2793,
+      "top1_accuracy": 19.66,
+      "log_loss": 2.0575,
+      "simulated_roi": 47.17
+    },
+    {
+      "fold": 4,
+      "train_n": 14364,
+      "test_n": 2793,
+      "top1_accuracy": 18.44,
+      "log_loss": 2.0645,
+      "simulated_roi": 37.35
+    },
+    {
+      "fold": 5,
+      "train_n": 17157,
+      "test_n": 2793,
+      "top1_accuracy": 17.69,
+      "log_loss": 2.0835,
+      "simulated_roi": 45.92
+    }
+  ],
+  "profitable_folds": 5,
+  "avg_oos_roi": 39.72,
+  "ready_for_deployment": true
+}

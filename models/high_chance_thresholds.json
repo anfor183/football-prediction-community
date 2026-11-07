@@ -1,0 +1,14 @@
+{
+  "over25": {
+    "min_prob": 0.75,
+    "typical_odd": 1.95,
+    "holdout_roi": 90.12,
+    "holdout_n": 40
+  },
+  "gg": {
+    "min_prob": 0.662,
+    "typical_odd": 2.0,
+    "holdout_roi": 90.32,
+    "holdout_n": 62
+  }
+}

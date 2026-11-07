@@ -1,0 +1,6 @@
+{
+  "global_min_prob": 0.73,
+  "holdout_roi": 51.48,
+  "holdout_n": 44,
+  "note": "XGBoost P(win) must exceed this for a Safest bet"
+}

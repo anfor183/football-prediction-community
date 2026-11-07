@@ -1,0 +1,42 @@
+{
+  "engine": "safest_xgboost",
+  "trained_on": 10998,
+  "folds": [
+    {
+      "fold": 1,
+      "test_n": 2199,
+      "thresh": 0.77,
+      "roi": 9.79,
+      "n": 24,
+      "profitable": true
+    },
+    {
+      "fold": 2,
+      "test_n": 2199,
+      "thresh": 0.69,
+      "roi": -1.67,
+      "n": 93,
+      "profitable": false
+    },
+    {
+      "fold": 3,
+      "test_n": 2199,
+      "thresh": 0.61,
+      "roi": -3.52,
+      "n": 294,
+      "profitable": false
+    },
+    {
+      "fold": 4,
+      "test_n": 2199,
+      "thresh": 0.77,
+      "roi": 24.0,
+      "n": 5,
+      "profitable": true
+    }
+  ],
+  "profitable_folds": 2,
+  "avg_oos_roi": 7.15,
+  "final_threshold": 0.73,
+  "ready_for_deployment": false
+}

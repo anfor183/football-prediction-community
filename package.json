@@ -1,0 +1,35 @@
+{
+  "name": "football-simulation-prediction-engine",
+  "version": "1.0.0",
+  "description": "Event-Driven Sports Simulation & Statistical Prediction Engine featuring Poisson probability modeling, exponential time-decay weighting, and real-time Electron + React dashboard.",
+  "author": "anfor183 <163532559+anfor183@users.noreply.github.com>",
+  "license": "MIT",
+  "main": "api/remote_api_server.js",
+  "scripts": {
+    "start": "cd dashboard && npm start",
+    "dashboard": "cd dashboard && npm start",
+    "dashboard:dev": "cd dashboard && npm run dev",
+    "backtest": "node backtest/run_backtest.js",
+    "api": "node api/remote_api_server.js",
+    "health": "node api/check_health.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  },
+  "keywords": [
+    "sports-analytics",
+    "poisson-distribution",
+    "predictive-modeling",
+    "electron",
+    "react",
+    "time-series",
+    "sqlite",
+    "quantitative-finance",
+    "machine-learning"
+  ]
+}

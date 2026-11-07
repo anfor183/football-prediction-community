@@ -1,0 +1,83 @@
+{
+  "engine": "high_chance_xgboost",
+  "trained_on": 19940,
+  "avg_oos_roi": 18.26,
+  "profitable_folds": 4,
+  "over25": {
+    "cv_folds": [
+      {
+        "fold": 1,
+        "test_n": 3988,
+        "thresh": 0.75,
+        "roi": 15.04,
+        "n": 139,
+        "profitable": true
+      },
+      {
+        "fold": 2,
+        "test_n": 3988,
+        "thresh": 0.75,
+        "roi": 33.42,
+        "n": 57,
+        "profitable": true
+      },
+      {
+        "fold": 3,
+        "test_n": 3988,
+        "thresh": 0.775,
+        "roi": 22.78,
+        "n": 27,
+        "profitable": true
+      },
+      {
+        "fold": 4,
+        "test_n": 3988,
+        "thresh": 0.7,
+        "roi": 10.42,
+        "n": 83,
+        "profitable": true
+      }
+    ],
+    "profitable_folds": 4,
+    "avg_oos_roi": 20.42
+  },
+  "gg": {
+    "cv_folds": [
+      {
+        "fold": 1,
+        "test_n": 3988,
+        "thresh": 0.35,
+        "roi": 8.77,
+        "n": 2372,
+        "profitable": true
+      },
+      {
+        "fold": 2,
+        "test_n": 3988,
+        "thresh": 0.775,
+        "roi": 21.74,
+        "n": 23,
+        "profitable": true
+      },
+      {
+        "fold": 3,
+        "test_n": 3988,
+        "thresh": 0.75,
+        "roi": 21.74,
+        "n": 23,
+        "profitable": true
+      },
+      {
+        "fold": 4,
+        "test_n": 3988,
+        "thresh": 0.575,
+        "roi": 12.15,
+        "n": 988,
+        "profitable": true
+      }
+    ],
+    "profitable_folds": 4,
+    "avg_oos_roi": 16.1
+  },
+  "ready_for_deployment": true
+}

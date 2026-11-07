@@ -1,0 +1,65 @@
+{
+  "htft11": {
+    "min_prob": 0.375,
+    "oos_roi": 80.79,
+    "oos_n": 127,
+    "oos_win_rate": 44.1,
+    "book_odd": 4.1
+  },
+  "htft1X": {
+    "min_prob": 0.425,
+    "oos_roi": 4.76,
+    "oos_n": 21,
+    "oos_win_rate": 4.8,
+    "book_odd": 22.0
+  },
+  "htft12": {
+    "min_prob": 0.075,
+    "oos_roi": 6.12,
+    "oos_n": 2714,
+    "oos_win_rate": 1.3,
+    "book_odd": 80.0
+  },
+  "htftX1": {
+    "min_prob": 0.4,
+    "oos_roi": 110.0,
+    "oos_n": 20,
+    "oos_win_rate": 30.0,
+    "book_odd": 7.0
+  },
+  "htftXX": {
+    "min_prob": 0.3,
+    "oos_roi": 34.76,
+    "oos_n": 82,
+    "oos_win_rate": 20.7,
+    "book_odd": 6.5
+  },
+  "htftX2": {
+    "min_prob": 0.4,
+    "oos_roi": 125.0,
+    "oos_n": 32,
+    "oos_win_rate": 25.0,
+    "book_odd": 9.0
+  },
+  "htft21": {
+    "min_prob": 0.2,
+    "oos_roi": 20.97,
+    "oos_n": 372,
+    "oos_win_rate": 1.6,
+    "book_odd": 75.0
+  },
+  "htft2X": {
+    "min_prob": 0.275,
+    "oos_roi": 54.39,
+    "oos_n": 171,
+    "oos_win_rate": 6.4,
+    "book_odd": 24.0
+  },
+  "htft22": {
+    "min_prob": 0.475,
+    "oos_roi": 93.33,
+    "oos_n": 21,
+    "oos_win_rate": 33.3,
+    "book_odd": 5.8
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>NexusPanel</title>
+    <link rel="icon" type="image/png" href="/src/assets/icon.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+<script>
+  window.onerror = function(msg, url, line, col, error) {
+    window.__uncaught_errors = window.__uncaught_errors || [];
+    const errObj = {msg, url, line, col, stack: error ? error.stack : ''};
+    window.__uncaught_errors.push(errObj);
+    if (window.api && window.api.logRendererError) {
+      window.api.logRendererError(errObj).catch(function(e) { console.error('Logger IPC error:', e); });
+    }
+  };
+  window.addEventListener('unhandledrejection', function(event) {
+    const msg = event.reason ? (event.reason.message || String(event.reason)) : 'Unhandled Promise Rejection';
+    const stack = event.reason ? event.reason.stack : '';
+    const errObj = { msg, url: 'unhandledrejection', line: 0, col: 0, stack };
+    window.__uncaught_errors = window.__uncaught_errors || [];
+    window.__uncaught_errors.push(errObj);
+    if (window.api && window.api.logRendererError) {
+      window.api.logRendererError(errObj).catch(function(e) { console.error('Logger IPC error:', e); });
+    }
+  });
+</script>

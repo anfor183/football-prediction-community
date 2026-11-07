@@ -1,0 +1,9 @@
+{
+  "outputDir": "./databases",
+  "trainingDbPath": "./databases/virtual_football_archive.db",
+  "pythonPath": "python3",
+  "confidenceFilter": 80,
+  "autoOptimizeDbEnabled": true,
+  "autoOptimizeTrimThreshold": 20000,
+  "note": "Live browser automation crawler runs via separate proprietary private module"
+}

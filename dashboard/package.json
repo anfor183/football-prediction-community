@@ -1,0 +1,39 @@
+{
+  "name": "nexus-panel",
+  "version": "1.1.1",
+  "description": "Premium Dashboard for Puppeteer Bot and Match Predictor",
+  "main": "./out/main/index.js",
+  "type": "module",
+  "author": "anfor183",
+  "scripts": {
+    "dev": "ELECTRON_DISABLE_SANDBOX=1 node --max-old-space-size=4096 node_modules/electron-vite/bin/electron-vite.js dev --noSandbox",
+    "build": "node --max-old-space-size=4096 node_modules/electron-vite/bin/electron-vite.js build",
+    "preview": "ELECTRON_DISABLE_SANDBOX=1 electron-vite preview --noSandbox",
+    "prestart": "npm run build",
+    "start": "ELECTRON_DISABLE_SANDBOX=1 electron . --no-sandbox",
+    "package": "npm run build && electron-builder",
+    "verify-package": "node scripts/verify_build.cjs",
+    "prepackage": "node scripts/verify_build.cjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "lucide-react": "^0.378.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "@electron-toolkit/preload": "^3.0.0",
+    "@electron-toolkit/utils": "^3.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^29.1.1",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.1.0",
+    "jimp": "^1.6.1",
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.34.5",
+    "vite": "^5.1.4"
+  }
+}
